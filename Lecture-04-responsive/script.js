@@ -1,4 +1,4 @@
-// Make sure the HTML is fully loaded first
+// Wait until HTML is fully loaded
 document.addEventListener("DOMContentLoaded", function () {
 
     // State variables
@@ -9,23 +9,26 @@ document.addEventListener("DOMContentLoaded", function () {
     const themeBtn = document.getElementById("themeBtn");
     const clickBtn = document.getElementById("clickBtn");
 
-    // Toggle theme button
+    // 🔴 SAFETY CHECK (this guarantees buttons exist)
+    if (!themeBtn || !clickBtn) {
+        alert("Buttons not found in HTML");
+        return;
+    }
+
+    // Toggle Theme button (already working, keep it)
     themeBtn.addEventListener("click", function () {
         isDarkMode = !isDarkMode;
         document.body.classList.toggle("dark");
-
-        if (isDarkMode) {
-            alert("Dark mode ON");
-        } else {
-            alert("Dark mode OFF");
-        }
     });
 
-    // Click counter button
+    // Click Me button (VISIBLE result)
     clickBtn.addEventListener("click", function () {
         clickCount++;
-        alert("Click Me button pressed " + clickCount + " times");
+
+        // Show result directly on the page
+        clickBtn.textContent = "Clicked " + clickCount + " times";
     });
 
 });
+
 
