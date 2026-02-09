@@ -1,18 +1,31 @@
-console.log("Page loaded");
+// Make sure the HTML is fully loaded first
+document.addEventListener("DOMContentLoaded", function () {
 
-let isDarkMode = false;   // state variable
-let clickCount = 0;      // state variable
+    // State variables
+    let isDarkMode = false;
+    let clickCount = 0;
 
-function toggleTheme() {
-    isDarkMode = !isDarkMode;
-    document.body.classList.toggle("dark");
-    console.log("Dark mode:", isDarkMode);
-}
+    // Get buttons
+    const themeBtn = document.getElementById("themeBtn");
+    const clickBtn = document.getElementById("clickBtn");
 
-function countClicks() {
-    clickCount++;
-    console.log("Button clicked", clickCount, "times");
-}
+    // Toggle theme button
+    themeBtn.addEventListener("click", function () {
+        isDarkMode = !isDarkMode;
+        document.body.classList.toggle("dark");
 
-document.getElementById("themeBtn").addEventListener("click", toggleTheme);
-document.getElementById("clickBtn").addEventListener("click", countClicks);
+        if (isDarkMode) {
+            alert("Dark mode ON");
+        } else {
+            alert("Dark mode OFF");
+        }
+    });
+
+    // Click counter button
+    clickBtn.addEventListener("click", function () {
+        clickCount++;
+        alert("Click Me button pressed " + clickCount + " times");
+    });
+
+});
+
