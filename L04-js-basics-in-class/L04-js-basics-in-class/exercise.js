@@ -1,72 +1,90 @@
-alert("JavaScript is running");
-console.log("JS connected ✅");
+alert("JS IS LOADED"); // 🔴 MUST SHOW POPUP
+console.log("JS connected");
 
-/* ========= Exercise 9 — Grade ========= */
-const scoreInput = document.getElementById("scoreInput");
-const btnGrade = document.getElementById("btnGrade");
-const gradeOut = document.getElementById("gradeOut");
+/* Exercise 9 — Grade */
+document.getElementById("btnGrade").onclick = function () {
+  const score = Number(document.getElementById("scoreInput").value);
+  let grade = "F";
 
-btnGrade.onclick = function () {
-  const score = Number(scoreInput.value);
-  let grade = "";
-
-  if (isNaN(score) || score < 0 || score > 100) grade = "Invalid";
+  if (score < 0 || score > 100 || isNaN(score)) grade = "Invalid";
   else if (score >= 90) grade = "A";
   else if (score >= 80) grade = "B";
   else if (score >= 70) grade = "C";
   else if (score >= 60) grade = "D";
-  else grade = "F";
 
-  gradeOut.innerText = "Grade: " + grade;
+  document.getElementById("gradeOut").innerText = "Grade: " + grade;
 };
 
-/* ========= Exercise 10 — Even / Odd ========= */
-const numEvenOdd = document.getElementById("numEvenOdd");
-const btnEvenOdd = document.getElementById("btnEvenOdd");
-const evenOddOut = document.getElementById("evenOddOut");
-
-function isEven(n) {
-  return n % 2 === 0;
-}
-
-btnEvenOdd.onclick = function () {
-  const n = Number(numEvenOdd.value);
-  evenOddOut.innerText = isEven(n)
-    ? "Result: EVEN"
-    : "Result: ODD";
+/* Exercise 10 — Even / Odd */
+document.getElementById("btnEvenOdd").onclick = function () {
+  const n = Number(document.getElementById("numEvenOdd").value);
+  document.getElementById("evenOddOut").innerText =
+    n % 2 === 0 ? "Result: EVEN" : "Result: ODD";
 };
 
-/* ========= Exercise 11 — Countdown ========= */
-const countdownInput = document.getElementById("countdownInput");
-const btnCountdown = document.getElementById("btnCountdown");
-const countdownOut = document.getElementById("countdownOut");
-
-btnCountdown.onclick = function () {
-  let start = Number(countdownInput.value);
+/* Exercise 11 — Countdown */
+document.getElementById("btnCountdown").onclick = function () {
+  let start = Number(document.getElementById("countdownInput").value);
   let text = "";
-
-  for (let i = start; i >= 0; i--) {
-    text += i + " ";
-  }
-
-  countdownOut.innerText = text.trim();
+  for (let i = start; i >= 0; i--) text += i + " ";
+  document.getElementById("countdownOut").innerText = text;
 };
 
-/* ========= Exercise 12 — Sum 1..N ========= */
-const nSumInput = document.getElementById("nSumInput");
-const btnSumN = document.getElementById("btnSumN");
-const sumNOut = document.getElementById("sumNOut");
-
-function sumToN(n) {
+/* Exercise 12 — Sum */
+document.getElementById("btnSumN").onclick = function () {
+  const n = Number(document.getElementById("nSumInput").value);
   let sum = 0;
   for (let i = 1; i <= n; i++) sum += i;
-  return sum;
-}
-
-btnSumN.onclick = function () {
-  sumNOut.innerText = "Sum: " + sumToN(Number(nSumInput.value));
+  document.getElementById("sumNOut").innerText = "Sum: " + sum;
 };
 
-/* ========= Exercise 13 — Repeat Text ========= */
-const repeatText = document.getElementByI
+/* Exercise 13 — Repeat */
+document.getElementById("btnRepeat").onclick = function () {
+  const text = document.getElementById("repeatText").value;
+  const times = Number(document.getElementById("repeatCount").value);
+  let result = "";
+  for (let i = 0; i < times; i++) result += text + " ";
+  document.getElementById("repeatOut").innerText = result;
+};
+
+/* Exercise 14 — Login */
+document.getElementById("btnLogin").onclick = function () {
+  const u = document.getElementById("loginUser").value;
+  const p = document.getElementById("loginPass").value;
+
+  if (u === "student" && p === "1234") {
+    document.getElementById("loginOut").innerText = "Status: Welcome ✅";
+  } else {
+    document.getElementById("loginOut").innerText = "Status: Wrong ❌";
+  }
+};
+
+/* Exercise 15 — Min / Max */
+document.getElementById("btnMinMax").onclick = function () {
+  const a = Number(document.getElementById("x").value);
+  const b = Number(document.getElementById("y").value);
+  const c = Number(document.getElementById("z").value);
+
+  let min = a;
+  if (b < min) min = b;
+  if (c < min) min = c;
+
+  let max = a;
+  if (b > max) max = b;
+  if (c > max) max = c;
+
+  document.getElementById("minMaxOut").innerText =
+    "Min: " + min + " | Max: " + max;
+};
+
+/* Exercise 16 — Table */
+document.getElementById("btnTable").onclick = function () {
+  const n = Number(document.getElementById("tableN").value);
+  let result = "";
+  for (let i = 1; i <= 10; i++) {
+    result += n + " × " + i + " = " + n * i + " | ";
+  }
+  document.getElementById("tableOut").innerText = result;
+};
+
 
