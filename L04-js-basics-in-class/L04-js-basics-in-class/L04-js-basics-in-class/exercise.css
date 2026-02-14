@@ -1,18 +1,10 @@
 body {
   font-family: Arial, sans-serif;
+  padding: 20px;
 }
 
-.card {
-  border: 1px solid #ddd;
-  padding: 16px;
-  margin: 16px 0;
+input, button {
+  margin: 4px;
+  padding: 6px;
 }
 
-button {
-  padding: 8px 12px;
-  cursor: pointer;
-}
-
-input {
-  padding: 8px;
-}
