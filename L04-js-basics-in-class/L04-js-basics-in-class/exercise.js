@@ -1,3 +1,4 @@
+alert("JavaScript is running");
 console.log("JS connected ✅");
 
 /* ========= Exercise 9 — Grade ========= */
