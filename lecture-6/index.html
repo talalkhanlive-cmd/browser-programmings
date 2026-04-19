@@ -1,0 +1,232 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>TALAL KHAN</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <a href="#main">Skip to content</a>
+
+  <header>
+    <h1>TALAL KHAN</h1>
+
+    <p>
+      I am Talal Khan, a student at Savonia University of Applied Sciences studying
+      Information Technology with a focus on IoT (Internet of Things).
+      I am currently learning new technologies, building practical projects,
+      and improving my skills in web development, programming, and smart systems.
+    </p>
+
+    <nav aria-label="Primary">
+      <ul>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#interests">Interests</a></li>
+        <li><a href="#api-demo">API Demo</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+
+    <div style="margin-top: 1rem; display: flex; gap: 10px; flex-wrap: wrap;">
+      <button id="theme-toggle" type="button">🌙 Toggle Theme</button>
+      <button id="click-counter" type="button">👋 Click Me</button>
+      <span id="click-count">0</span>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <!-- Portfolio Section -->
+    <section id="portfolio">
+      <h2>Portfolio / Works</h2>
+
+      <figure>
+        <img
+          src="talal.jpeg"
+          alt="Personal photo of Talal Khan"
+          width="500"
+          height="600"
+        >
+        <figcaption>
+          A personal photo representing my academic and project journey.
+        </figcaption>
+      </figure>
+
+      <h3>Links</h3>
+      <ul>
+        <li>
+          <a
+            href="https://github.com/talalkhanlive"
+            target="_blank"
+            rel="noopener"
+          >
+            GitHub Profile
+          </a>
+        </li>
+
+        <li>
+          <a
+            href="https://www.linkedin.com/in/talal-khan-a11b80327"
+            target="_blank"
+            rel="noopener"
+          >
+            LinkedIn Profile
+          </a>
+        </li>
+      </ul>
+
+      <h3>Featured Video</h3>
+
+      <figure>
+        <iframe
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/jnnj3RUypFQ"
+          title="Project Video"
+          allowfullscreen>
+        </iframe>
+
+        <figcaption>
+          A featured project or learning video included for portfolio practice.
+        </figcaption>
+      </figure>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills">
+      <h2>Skills</h2>
+
+      <p>Technologies and tools I work with:</p>
+
+      <ul>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+        <li>Python</li>
+        <li>IoT</li>
+        <li>Embedded Systems</li>
+        <li>Git & GitHub</li>
+        <li>Linux</li>
+      </ul>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+      <h2>Projects</h2>
+
+      <article>
+        <h3>Personal Portfolio Website</h3>
+        <p>
+          A personal portfolio website built using semantic HTML and CSS
+          to present my background, skills, interests, and projects.
+        </p>
+      </article>
+
+      <article>
+        <h3>IoT Learning Projects</h3>
+        <p>
+          Small practical projects related to sensors, smart systems,
+          and IoT concepts to improve my understanding of connected devices.
+        </p>
+      </article>
+
+      <article>
+        <h3>Interactive Portfolio Features</h3>
+        <p>
+          Added JavaScript features such as theme toggling, click counter,
+          dynamic content, and localStorage support.
+        </p>
+      </article>
+    </section>
+
+    <!-- Interests Section -->
+    <section id="interests">
+      <h2>Areas of Interest</h2>
+
+      <h3>What I Like Learning</h3>
+      <ul>
+        <li>Internet of Things (IoT)</li>
+        <li>Web Development</li>
+        <li>Frontend Fundamentals</li>
+        <li>Programming and Problem Solving</li>
+        <li>Technology that improves daily life</li>
+      </ul>
+
+      <h3>Hobbies</h3>
+      <ol>
+        <li>Learning new technologies</li>
+        <li>Building mini projects</li>
+        <li>Reading about innovation and tech</li>
+      </ol>
+    </section>
+
+    <!-- API Demo Section -->
+    <section id="api-demo">
+      <h2>External Data Demo</h2>
+
+      <p>
+        This section fetches live data from a public REST API using
+        fetch(), async/await, and try/catch.
+        Click the button to load sample user data from JSONPlaceholder.
+      </p>
+
+      <button id="load-data-btn" type="button">
+        ⬇️ Load Data
+      </button>
+
+      <div id="api-result"></div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer id="contact">
+    <h2>Contact & Social</h2>
+
+    <p>Find me online:</p>
+
+    <ul>
+      <li>
+        <a
+          href="https://www.linkedin.com/in/talal-khan-a11b80327"
+          target="_blank"
+          rel="noopener"
+        >
+          LinkedIn
+        </a>
+      </li>
+
+      <li>
+        <a
+          href="https://github.com/talalkhanlive"
+          target="_blank"
+          rel="noopener"
+        >
+          GitHub
+        </a>
+      </li>
+
+      <li>
+        <a href="mailto:talalkhan3310@gmail.com">
+          talalkhan3310@gmail.com
+        </a>
+      </li>
+    </ul>
+
+    <p id="last-updated"></p>
+
+    <p>
+      <small>
+        © TALAL KHAN. Built with semantic HTML.
+      </small>
+    </p>
+  </footer>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
