@@ -1,113 +1,119 @@
-TALAL KHAN | IoT & AI Developer
+# TALAL KHAN | IoT & AI Developer
 
 Welcome to the portfolio of Talal Khan, a passionate IoT Engineer-in-Training and AI/ML Developer. This portfolio highlights various projects, technical skills, and more.
 
-Live Link
+---
+
+## Live Portfolio
 
 https://talalkhanlive.github.io/browser_programming_assignment/professional-portfolio/index.html
 
-About Me
+---
 
-I am currently a student at Savonia University, focusing on building the future of IoT and Artificial Intelligence. I am particularly interested in robotics automation, embedded systems, and cybersecurity integration.
+## About Me
 
-Skills
+I am currently a student at Savonia University, focusing on building the future of IoT and Artificial Intelligence.
 
-IoT & Robotics:
-Niryo Robotics, Sensor Integration, Arduino, Raspberry Pi
+I am particularly interested in:
 
-AI/ML Development:
-Python AI Models, Fraud Detection, Data Analysis
+- Robotics Automation
+- Embedded Systems
+- AI & Machine Learning
+- Cybersecurity Integration
+- IoT Solutions
 
-Web Development:
-HTML5, CSS3, JavaScript (ES6+), Semantic Structure
+---
 
-Cybersecurity:
-Kali Linux, Network Monitoring, IoT Security Protocols
+## Skills
 
-Major Projects
+### IoT & Robotics
+- Niryo Robotics
+- Sensor Integration
+- Arduino
+- Raspberry Pi
 
-1. Fraud Detection Model
+### AI / ML Development
+- Python AI Models
+- Fraud Detection
+- Data Analysis
 
-Category: Machine Learning / AI
+### Web Development
+- HTML5
+- CSS3
+- JavaScript (ES6+)
+- Semantic Structure
 
-Description:
-Developed an AI system using Python and Scikit-learn to identify fraudulent transactions with high precision by analyzing complex data patterns.
+### Cybersecurity
+- Kali Linux
+- Network Monitoring
+- IoT Security Protocols
 
-Technologies Used:
-Python, Scikit-learn, Machine Learning
+---
 
-AI Interface
+## Major Projects
 
+---
 
-2. Niryo Collaborative Robot
+### 1. Fraud Detection Model
 
-Category: Robotics / Automation
+**Category:** Machine Learning / AI
 
-Description:
-Programmed and integrated a Niryo collaborative robot for industrial automation tasks, focusing on precision pick-and-place and workflow optimization.
+**Description:**  
+Developed an AI system using Python and Scikit-learn to identify fraudulent transactions with high precision.
 
-Technologies Used:
-Robotics, Niryo Robotics, Industrial Automation
+### Project Image
 
-Robotic Arm
+![AI Interface](Screenshot%202026-04-19%20033013.png)
 
+---
 
-3. Penetration Testing Lab
+### 2. Niryo Collaborative Robot
 
-Category: Security / Kali Linux
+**Category:** Robotics / Automation
 
-Description:
-Conducted vulnerability assessments and network security testing using Kali Linux environments to secure IoT devices.
+**Description:**  
+Programmed and integrated a Niryo collaborative robot for industrial automation tasks.
 
-Technologies Used:
-Kali Linux, Penetration Testing, IoT Security
+### Project Image
 
-Cybersecurity
+![Robotic Arm](Screenshot%202026-04-19%20033033.png)
 
+---
 
-Technical Expertise
+### 3. Penetration Testing Lab
 
-Web Development
+**Category:** Security / Kali Linux
 
-Skills:
-HTML5, CSS3, JavaScript (ES6+), Semantic Structure
+**Description:**  
+Conducted vulnerability assessments and network security testing using Kali Linux.
 
-IoT & Robotics
+### Project Image
 
-Skills:
-Niryo Robotics, Sensor Integration, Arduino, Raspberry Pi
+![Cybersecurity](Screenshot%202026-04-19%20033046.png)
 
-Data Science
+---
 
-Skills:
-Python AI Models, Fraud Detection, Data Analysis
+## Project Demo Video
 
-Security
+Watch Demo Here:
 
-Skills:
-Kali Linux, Network Monitoring, IoT Security Protocols
-
-
-Project Demo
-
-Check out the demo of one of my projects:
-
-Video Demo:
 https://www.youtube.com/watch?v=ordeAlHF5Qg
 
+---
 
-Contact Me
+## Contact Me
 
-I’m open to internships and IoT research collaborations. Let’s build something amazing together!
+I’m open to internships and IoT research collaborations.
 
-GitHub:
+### GitHub
 https://github.com/talalkhanlive
 
-LinkedIn:
+### LinkedIn
 https://www.linkedin.com/in/talal-khan-a11b80327
 
-Email:
+### Email
 talalkhan3310@gmail.com
 
+---
 
 © 2026 TALAL KHAN | IoT Portfolio
