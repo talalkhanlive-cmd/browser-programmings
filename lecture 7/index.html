@@ -1,0 +1,227 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>TALAL KHAN</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<a href="#main">Skip to content</a>
+
+  <header>
+    <h1>TALAL KHAN</h1>
+    <p>
+      I am Talal, a student at Savonia University of Applied Sciences studying IoT (Internet of Things).
+      Currently in my second year, building projects and learning new technologies.
+    </p>
+
+    <nav aria-label="Primary">
+      <ul>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#interests">Interests</a></li>
+        <li><a href="#api-demo">API Demo</a></li>
+        <li><a href="weather.html">🌤️ Weather App</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+
+    <div style="margin-top:1rem; display:flex; gap:0.6rem; align-items:center; flex-wrap:wrap;">
+      <button id="theme-toggle" aria-pressed="false" type="button">🌙 Toggle Theme</button>
+      <button id="click-counter" type="button">👋 Click me</button>
+      <span id="click-count" aria-live="polite" style="font-weight:600; margin-left:0.5rem;">0</span>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <section id="portfolio" aria-labelledby="portfolio-heading">
+      <h2 id="portfolio-heading">Portfolio / Works</h2>
+
+      <figure>
+        <img src="talal.jpeg"
+             alt="Personal photo of Talal Khan"
+             width="500"
+             height="600">
+        <figcaption>A personal photo captured during my academic journey.</figcaption>
+      </figure>
+
+      <section aria-labelledby="links-heading">
+        <h3 id="links-heading">Links</h3>
+        <ul>
+          <li><a href="https://github.com/talalkhanlive" rel="noopener">GitHub profile</a></li>
+          <li><a href="https://www.linkedin.com/in/talal-khan-a11b80327" rel="noopener">LinkedIn profile</a></li>
+        </ul>
+      </section>
+
+      <section aria-labelledby="video-heading">
+        <h3 id="video-heading">Featured video</h3>
+        <figure>
+          <iframe
+            src="https://www.youtube.com/embed/jnnj3RUypFQ"
+            title="My project video"
+            width="560"
+            height="315"
+            allowfullscreen>
+          </iframe>
+          <figcaption>A short HTML video embed used here to practice semantic structure and accessible media.</figcaption>
+        </figure>
+      </section>
+    </section>
+
+    <section id="skills" aria-labelledby="skills-heading">
+      <h2 id="skills-heading">Skills</h2>
+      <p>Technologies and tools I work with:</p>
+
+      <div class="skills-grid">
+        <div class="skill-card">
+          <span class="skill-icon">🌐</span>
+          <span class="skill-name">HTML</span>
+          <span class="skill-level">Intermediate</span>
+        </div>
+
+        <div class="skill-card">
+          <span class="skill-icon">🎨</span>
+          <span class="skill-name">CSS</span>
+          <span class="skill-level">Intermediate</span>
+        </div>
+
+        <div class="skill-card">
+          <span class="skill-icon">⚡</span>
+          <span class="skill-name">JavaScript</span>
+          <span class="skill-level">Beginner</span>
+        </div>
+
+        <div class="skill-card">
+          <span class="skill-icon">🐍</span>
+          <span class="skill-name">Python</span>
+          <span class="skill-level">Beginner</span>
+        </div>
+
+        <div class="skill-card">
+          <span class="skill-icon">📡</span>
+          <span class="skill-name">IoT</span>
+          <span class="skill-level">Learning</span>
+        </div>
+
+        <div class="skill-card">
+          <span class="skill-icon">🔌</span>
+          <span class="skill-name">LTspice</span>
+          <span class="skill-level">Beginner</span>
+        </div>
+
+        <div class="skill-card">
+          <span class="skill-icon">🐙</span>
+          <span class="skill-name">Git &amp; GitHub</span>
+          <span class="skill-level">Beginner</span>
+        </div>
+
+        <div class="skill-card">
+          <span class="skill-icon">🖥️</span>
+          <span class="skill-name">Linux</span>
+          <span class="skill-level">Beginner</span>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" aria-labelledby="projects-heading">
+      <h2 id="projects-heading">Projects</h2>
+
+      <article class="project-card">
+        <div class="project-tag">HTML / CSS</div>
+        <h3>Personal Portfolio — Lecture 01</h3>
+        <p>
+          A clean starter portfolio focused on semantic HTML structure and clear content
+          hierarchy, built as the first exercise in the Web Fundamentals course at Savonia.
+        </p>
+        <a href="https://github.com/talalkhanlive" rel="noopener" class="project-link">
+          View on GitHub →
+        </a>
+      </article>
+
+      <article class="project-card">
+        <div class="project-tag">HTML / Accessibility</div>
+        <h3>Semantic HTML Upgrade — Lecture 02</h3>
+        <p>
+          Rebuilt the same portfolio using proper semantic elements, ARIA labels, skip links,
+          and accessible media embeds to improve screen-reader compatibility.
+        </p>
+        <a href="https://github.com/talalkhanlive" rel="noopener" class="project-link">
+          View on GitHub →
+        </a>
+      </article>
+
+      <article class="project-card">
+        <div class="project-tag">JavaScript / DOM</div>
+        <h3>Interactive Portfolio — Lecture 05</h3>
+        <p>
+          Added theme toggling, localStorage persistence, a live click counter, and
+          dynamic "Last updated" date to the portfolio using vanilla JavaScript.
+        </p>
+        <a href="https://github.com/talalkhanlive" rel="noopener" class="project-link">
+          View on GitHub →
+        </a>
+      </article>
+    </section>
+
+    <section id="interests" aria-labelledby="interests-heading">
+      <h2 id="interests-heading">Areas of Interest</h2>
+
+      <article>
+        <h3>What I like learning and building</h3>
+        <ul>
+          <li>Semantic HTML and accessibility</li>
+          <li>Web performance basics</li>
+          <li>Frontend fundamentals</li>
+          <li>Design systems and writing clear UI content</li>
+          <li>Technology and problem-solving through small projects</li>
+        </ul>
+      </article>
+
+      <article>
+        <h3>Hobbies</h3>
+        <ol>
+          <li>Exploring new tools and learning by making mini projects</li>
+          <li>Photography and editing</li>
+          <li>Reading about tech and productivity</li>
+        </ol>
+      </article>
+    </section>
+
+    <section id="api-demo" aria-labelledby="api-demo-heading">
+      <h2 id="api-demo-heading">External Data Demo</h2>
+      <p>
+        This section fetches live data from a public REST API using
+        <code>fetch()</code>, <code>async/await</code>, and <code>try/catch</code>.
+        Click the button to load a user record from JSONPlaceholder.
+      </p>
+
+      <button id="load-data-btn" type="button" class="load-btn">
+        ⬇️ Load Data
+      </button>
+
+      <div id="api-result" aria-live="polite" aria-atomic="true"></div>
+    </section>
+
+  </main>
+
+  <footer id="contact">
+    <h2>Contact &amp; Social</h2>
+    <p>Find me online:</p>
+
+    <ul>
+      <li><a href="https://www.linkedin.com/in/talal-khan-a11b80327" rel="noopener">LinkedIn</a></li>
+      <li><a href="https://github.com/talalkhanlive" rel="noopener">GitHub</a></li>
+      <li><a href="mailto:talalkhan3310@gmail.com">talalkhan3310@gmail.com</a></li>
+    </ul>
+
+    <p id="last-updated" style="margin-top:1rem; font-size:0.85rem; opacity:0.7;"></p>
+
+    <p><small>&copy; TALAL KHAN. Built with semantic HTML.</small></p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
