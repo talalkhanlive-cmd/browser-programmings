@@ -18,7 +18,7 @@ API Used
 
 GET https://jsonplaceholder.typicode.com/users/1
 
-Fetched Data Displayed
+Fetched Data Displayed 
 
 • Name  
 • Email  
