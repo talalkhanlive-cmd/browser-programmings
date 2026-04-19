@@ -1,0 +1,324 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>TALAL KHAN | IoT & AI Developer</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;500;700&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <style>
+    :root {
+      --bg-dark: #0f172a;
+      --bg-card: #1e293b;
+      --accent: #38bdf8;
+      --accent-2: #818cf8;
+      --text-bright: #f1f5f9;
+      --text-dim: #94a3b8;
+      --finnish-blue: #003580;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: var(--bg-dark);
+      color: var(--text-dim);
+      line-height: 1.6;
+    }
+
+    h1, h2, h3 {
+      color: var(--text-bright);
+      font-family: 'Space Grotesk', sans-serif;
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: auto;
+      padding: 0 2rem;
+    }
+
+    nav {
+      padding: 1.5rem 0;
+      background: rgba(15, 23, 42, 0.95);
+      border-bottom: 1px solid rgba(255,255,255,0.08);
+    }
+
+    .nav-content {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .nav-logo {
+      color: white;
+      font-weight: bold;
+      font-size: 1.2rem;
+    }
+
+    .nav-links {
+      display: flex;
+      list-style: none;
+      gap: 2rem;
+    }
+
+    .nav-links a {
+      color: white;
+      text-decoration: none;
+    }
+
+    .hero {
+      text-align: center;
+      padding: 6rem 0;
+    }
+
+    .hero h1 {
+      font-size: 3.5rem;
+      margin-bottom: 1rem;
+    }
+
+    .hero p {
+      max-width: 700px;
+      margin: auto;
+      font-size: 1.1rem;
+    }
+
+    section {
+      padding: 4rem 0;
+    }
+
+    .section-title {
+      font-size: 2rem;
+      margin-bottom: 2rem;
+      color: white;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 2rem;
+    }
+
+    .card {
+      background: var(--bg-card);
+      border-radius: 16px;
+      overflow: hidden;
+      border: 1px solid rgba(255,255,255,0.05);
+    }
+
+    .card-img {
+      width: 100%;
+      height: 220px;
+      object-fit: cover;
+    }
+
+    .card-body {
+      padding: 1.5rem;
+    }
+
+    .tag {
+      color: var(--accent);
+      font-size: 0.8rem;
+      font-weight: bold;
+    }
+
+    .card-body h3 {
+      margin: 0.7rem 0;
+    }
+
+    .skills-box {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 1.5rem;
+    }
+
+    .skill-category {
+      background: rgba(255,255,255,0.03);
+      padding: 1.5rem;
+      border-radius: 12px;
+    }
+
+    .video-box {
+      position: relative;
+      padding-bottom: 56.25%;
+      height: 0;
+      overflow: hidden;
+      border-radius: 16px;
+    }
+
+    .video-box iframe {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      left: 0;
+      top: 0;
+      border: 0;
+    }
+
+    footer {
+      text-align: center;
+      padding: 4rem 0;
+      background: #0a0f1a;
+      margin-top: 4rem;
+    }
+
+    .social-links {
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      margin: 2rem 0;
+    }
+
+    .social-links a {
+      color: white;
+      font-size: 1.5rem;
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <div class="container nav-content">
+      <div class="nav-logo">TALAL.KHAN</div>
+
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#demo">Demo</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <header class="hero" id="about">
+    <div class="container">
+      <h1>Talal Khan</h1>
+      <p>
+        IoT Engineer-in-Training and AI/ML Developer at Savonia University.
+        Passionate about robotics automation, embedded systems,
+        cybersecurity, and intelligent solutions.
+      </p>
+    </div>
+  </header>
+
+  <main class="container">
+
+    <section id="projects">
+      <h2 class="section-title">Major Projects</h2>
+
+      <div class="grid">
+
+        <article class="card">
+          <img src="Screenshot 2026-04-19 033013.png" alt="AI Interface" class="card-img">
+          <div class="card-body">
+            <div class="tag">Machine Learning / AI</div>
+            <h3>Fraud Detection Model</h3>
+            <p>
+              Developed an AI system using Python and Scikit-learn
+              to detect fraudulent transactions using data analysis.
+            </p>
+          </div>
+        </article>
+
+        <article class="card">
+          <img src="Screenshot 2026-04-19 033033.png" alt="Robotic Arm" class="card-img">
+          <div class="card-body">
+            <div class="tag">Robotics / Automation</div>
+            <h3>Niryo Collaborative Robot</h3>
+            <p>
+              Programmed and integrated a collaborative robot
+              for industrial automation and smart workflow optimization.
+            </p>
+          </div>
+        </article>
+
+        <article class="card">
+          <img src="Screenshot 2026-04-19 033046.png" alt="Cybersecurity" class="card-img">
+          <div class="card-body">
+            <div class="tag">Security / Kali Linux</div>
+            <h3>Penetration Testing Lab</h3>
+            <p>
+              Performed vulnerability assessment and IoT security testing
+              using Kali Linux and penetration testing tools.
+            </p>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <section id="skills">
+      <h2 class="section-title">Technical Expertise</h2>
+
+      <div class="skills-box">
+
+        <div class="skill-category">
+          <h3>Web Development</h3>
+          <p>HTML5, CSS3, JavaScript, Semantic Structure</p>
+        </div>
+
+        <div class="skill-category">
+          <h3>IoT & Robotics</h3>
+          <p>Arduino, Raspberry Pi, Sensor Integration, Robotics</p>
+        </div>
+
+        <div class="skill-category">
+          <h3>AI / ML</h3>
+          <p>Python, Machine Learning, Fraud Detection, Data Analysis</p>
+        </div>
+
+        <div class="skill-category">
+          <h3>Cybersecurity</h3>
+          <p>Kali Linux, Network Monitoring, IoT Security</p>
+        </div>
+
+      </div>
+    </section>
+
+    <section id="demo">
+      <h2 class="section-title">Project Demo</h2>
+
+      <div class="video-box">
+        <iframe
+          src="https://www.youtube.com/embed/ordeAlHF5Qg"
+          title="Project Demo"
+          allowfullscreen>
+        </iframe>
+      </div>
+    </section>
+
+  </main>
+
+  <footer id="contact">
+    <div class="container">
+      <h2>Contact Me</h2>
+      <p>I am open to internships and research collaborations.</p>
+
+      <div class="social-links">
+        <a href="https://github.com/talalkhanlive">
+          <i class="fab fa-github"></i>
+        </a>
+
+        <a href="https://www.linkedin.com/in/talal-khan-a11b80327">
+          <i class="fab fa-linkedin"></i>
+        </a>
+
+        <a href="mailto:talalkhan3310@gmail.com">
+          <i class="fas fa-envelope"></i>
+        </a>
+      </div>
+
+      <p>
+        © 2026 TALAL KHAN | IoT Portfolio
+      </p>
+    </div>
+  </footer>
+
+</body>
+</html>
