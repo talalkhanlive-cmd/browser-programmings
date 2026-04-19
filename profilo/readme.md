@@ -63,7 +63,7 @@ Developed an AI system using Python and Scikit-learn to identify fraudulent tran
 
 ### Project Image
 
-![AI Interface](./ai-interface.png)
+![AI Interface](./Screenshot%202026-04-19%20033013.png)
 
 ---
 
@@ -76,7 +76,7 @@ Programmed and integrated a Niryo collaborative robot for industrial automation 
 
 ### Project Image
 
-![Robotic Arm](./robot-arm.png)
+![Robotic Arm](./Screenshot%202026-04-19%20033033.png)
 
 ---
 
@@ -89,7 +89,7 @@ Conducted vulnerability assessments and network security testing using Kali Linu
 
 ### Project Image
 
-![Cybersecurity](./cybersecurity.png)
+![Cybersecurity](./Screenshot%202026-04-19%20033046.png)
 
 ---
 
@@ -132,4 +132,4 @@ talalkhan3310@gmail.com
 
 ---
 
-© 2026 TALAL KHAN | IoT Portfolio
+© 2026 TALAL KHAN | IoT Portfoliolio
