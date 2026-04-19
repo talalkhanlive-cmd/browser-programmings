@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Weather App — Talal Khan</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="exercise.css">
+</head>
+<body>
+
+  <header>
+    <h1>🌤️ Weather App</h1>
+    <p>Live weather data fetched from the Open-Meteo public API.</p>
+
+    <nav aria-label="Primary">
+      <ul>
+        <li><a href="index.html">← Portfolio</a></li>
+        <li><a href="#weather-app">Weather</a></li>
+      </ul>
+    </nav>
+
+    <div style="margin-top:1rem;">
+      <button id="theme-toggle" aria-pressed="false" type="button">🌙 Toggle Theme</button>
+    </div>
+  </header>
+
+  <main id="main">
+    <section id="weather-app" aria-labelledby="weather-heading">
+      <h2 id="weather-heading">Current Weather</h2>
+      <p>Choose a city to fetch live temperature and wind data:</p>
+
+      <div class="city-buttons" role="group" aria-label="Select a city">
+        <button class="city-btn" id="btnKuopio">📍 Kuopio</button>
+        <button class="city-btn" id="btnHelsinki">📍 Helsinki</button>
+        <button class="city-btn" id="btnTampere">📍 Tampere</button>
+        <button class="city-btn" id="btnOulu">📍 Oulu</button>
+        <button class="city-btn" id="btnTurku">📍 Turku</button>
+      </div>
+
+      <div id="weatherBox" class="weather-card hidden" aria-live="polite" aria-atomic="true">
+
+        <div class="weather-hero">
+          <span id="weather-icon" class="weather-big-icon" aria-hidden="true">🌡️</span>
+          <div>
+            <h3 id="city" class="weather-city-name">—</h3>
+            <p class="weather-subtitle">Current conditions</p>
+          </div>
+        </div>
+
+        <div class="weather-stats">
+          <div class="weather-stat">
+            <span class="stat-icon">🌡️</span>
+            <span class="stat-label">Temperature</span>
+            <span class="stat-value" id="temperature">—</span>
+          </div>
+          <div class="weather-stat">
+            <span class="stat-icon">💨</span>
+            <span class="stat-label">Wind Speed</span>
+            <span class="stat-value" id="wind">—</span>
+          </div>
+          <div class="weather-stat">
+            <span class="stat-icon">🕐</span>
+            <span class="stat-label">Updated</span>
+            <span class="stat-value" id="updated-time">—</span>
+          </div>
+        </div>
+      </div>
+
+      <div id="weatherStatus" aria-live="polite"></div>
+
+      <details class="log-details">
+        <summary>API log</summary>
+        <pre id="output"></pre>
+      </details>
+
+    </section>
+  </main>
+
+  <footer>
+    <p>
+      Data from <a href="https://open-meteo.com" rel="noopener" target="_blank">Open-Meteo</a>
+      — free, no API key required.
+    </p>
+    <p><small>&copy; TALAL KHAN. Built with semantic HTML.</small></p>
+  </footer>
+
+  <script src="weather.js"></script>
+</body>
+</html>
