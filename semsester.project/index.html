@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Browser Programming — Weekly Materials</title>
+  <style>
+    body { margin: 0; font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; }
+    .container { max-width: 900px; margin: 0 auto; padding: 24px; }
+    header, main, footer { border: 1px solid #e6e6e6; border-radius: 12px; padding: 16px; margin-bottom: 16px; }
+    ul { padding-left: 18px; }
+    a { text-decoration: none; }
+    a:hover { text-decoration: underline; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1 style="margin:0;">Browser Programming</h1>
+      <p style="margin:6px 0 0; color:#555;">Weekly course materials</p>
+    </header>
+
+    <main>
+      <h2>Lectures</h2>
+      <ul>
+        <li><a href="./lecture-01-GitHub-basics/">Lecture 1</a></li>
+        <li><a href="./lecture-02-semantic-html/">Lecture 2</a></li>
+        <li><a href="./lecture-03-css-basics/">Lecture 3</a></li>
+        <li><a href="./lecture-04-responsive/">Lecture 4</a></li>
+        <li><a href="./lecture-05-dom-data/">Lecture 1</a></li>
+        <li><a href="./lecture-06-async-js/">Lecture 2</a></li>
+        <li><a href="./lecture-07-data-formats-api/">Lecture 3</a></li>
+        <li><a href="./lecture-08-UI-frameworks/">Lecture 4</a></li>
+        <li><a href="./lecture-09-backend-basics/">Lecture 1</a></li>
+        <li><a href="./lecture-10-multilayer-web/">Lecture 2</a></li>
+        <li><a href="./semester-project/">Lecture 3</a></li>
+        <!-- Add more weeks as you create them -->
+      </ul>
+    </main>
+
+    <footer>
+      <small>&copy; <span id="year"></span> Osman Torunoglu</small>
+    </footer>
+  </div>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
