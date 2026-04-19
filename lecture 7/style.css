@@ -1,0 +1,408 @@
+/* ============================================================
+   style.css — Lecture 06
+   TALAL KHAN — Portfolio Styles
+   ============================================================ */
+
+/* ---------- Reset & Base ---------- */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+/* ── CSS Variables (Light Theme) ───────────────────── */
+:root {
+  --bg-body:       linear-gradient(180deg, #f8fafc, #eef2ff);
+  --bg-header:     linear-gradient(135deg, #1e293b, #0f172a);
+  --bg-section:    #ffffff;
+  --color-text:    #0f172a;
+  --color-muted:   #475569;
+  --color-caption: #475569;
+  --color-accent:  #6366f1;
+  --color-nav-link:#e0e7ff;
+  --color-footer-link: #c7d2fe;
+  --header-p:      #cbd5f5;
+  --shadow:        0 10px 30px rgba(15,23,42,0.08), 0 1px 3px rgba(15,23,42,0.04);
+  --border:        #e5e7eb;
+
+  /* Skill card */
+  --skill-bg:      #f1f5f9;
+  --skill-border:  #e2e8f0;
+  --skill-text:    #1e293b;
+  --skill-level:   #6366f1;
+
+  /* Project card */
+  --proj-bg:       #f8fafc;
+  --proj-border:   #e2e8f0;
+  --proj-tag-bg:   #eef2ff;
+  --proj-tag-text: #4f46e5;
+}
+
+/* ── Dark Theme ─────────────────────────────────────── */
+body.dark {
+  --bg-body:       linear-gradient(180deg, #0d1117, #161b27);
+  --bg-header:     linear-gradient(135deg, #0d1117, #161b27);
+  --bg-section:    #1a2233;
+  --color-text:    #e2e8f0;
+  --color-muted:   #94a3b8;
+  --color-caption: #94a3b8;
+  --color-accent:  #818cf8;
+  --color-nav-link:#a5b4fc;
+  --color-footer-link: #a5b4fc;
+  --header-p:      #94a3b8;
+  --shadow:        0 10px 30px rgba(0,0,0,0.4), 0 1px 3px rgba(0,0,0,0.3);
+  --border:        #2d3748;
+
+  --skill-bg:      #0f172a;
+  --skill-border:  #2d3748;
+  --skill-text:    #e2e8f0;
+  --skill-level:   #818cf8;
+
+  --proj-bg:       #0f172a;
+  --proj-border:   #2d3748;
+  --proj-tag-bg:   #1e293b;
+  --proj-tag-text: #a5b4fc;
+}
+
+/* ── Base ───────────────────────────────────────────── */
+body {
+  margin: 0;
+  font-family: "Segoe UI", system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+  line-height: 1.7;
+  color: var(--color-text);
+  background: var(--bg-body);
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+/* ── Typography ─────────────────────────────────────── */
+h1 { font-size: 2.4rem; letter-spacing: -0.03em; }
+h2 { font-size: 1.7rem; margin-bottom: 0.75rem; }
+h3 { font-size: 1.2rem; }
+p  { margin-bottom: 1rem; max-width: 65ch; }
+
+/* ── Header & Footer ────────────────────────────────── */
+header,
+footer {
+  background: var(--bg-header);
+  color: #f8fafc;
+  padding: 2rem;
+  border-radius: 14px;
+  margin: 1.5rem;
+  transition: background 0.3s ease;
+}
+
+header p { color: var(--header-p); }
+
+footer { text-align: center; }
+footer a { color: var(--color-footer-link); }
+
+/* ── Buttons ────────────────────────────────────────── */
+button {
+  background: rgba(255,255,255,0.12);
+  color: #e0e7ff;
+  border: 1px solid rgba(255,255,255,0.18);
+  padding: 0.45rem 1rem;
+  border-radius: 999px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  font-weight: 600;
+  transition: background 0.2s ease, transform 0.15s ease;
+}
+
+button:hover {
+  background: var(--color-accent);
+  color: #fff;
+  transform: translateY(-1px);
+}
+
+/* ── Main Layout ────────────────────────────────────── */
+main {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+/* ── Section Cards ──────────────────────────────────── */
+section {
+  background: var(--bg-section);
+  border-radius: 16px;
+  padding: 2rem;
+  margin: 2rem 0;
+  box-shadow: var(--shadow);
+  transition: background 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* ── Navigation ─────────────────────────────────────── */
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 1.5rem 0 0;
+  display: flex;
+  gap: 0.6rem;
+  flex-wrap: wrap;
+}
+
+nav li { display: inline-block; }
+
+nav a {
+  text-decoration: none;
+  color: var(--color-nav-link);
+  padding: 0.45rem 0.9rem;
+  border-radius: 999px;
+  font-weight: 600;
+  font-size: 0.9rem;
+  background: rgba(255,255,255,0.08);
+  transition: all 0.2s ease;
+}
+
+nav a:hover {
+  background: var(--color-accent);
+  color: #ffffff;
+  transform: translateY(-1px);
+}
+
+/* ── Images & Media ─────────────────────────────────── */
+img, iframe {
+  max-width: 100%;
+  height: auto;
+  border-radius: 14px;
+}
+
+figure { margin: 1.5rem 0; }
+
+figcaption {
+  font-size: 0.9rem;
+  color: var(--color-caption);
+  margin-top: 0.5rem;
+}
+
+/* ── Old project articles (portfolio section) ───────── */
+article {
+  margin-top: 2rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--border);
+}
+
+article h4 { margin-bottom: 0.5rem; }
+
+/* ── Skills Grid ────────────────────────────────────── */
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+.skill-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.4rem;
+  background: var(--skill-bg);
+  border: 1px solid var(--skill-border);
+  border-radius: 14px;
+  padding: 1.2rem 0.8rem;
+  text-align: center;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.3s ease;
+}
+
+.skill-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 20px rgba(99,102,241,0.18);
+}
+
+.skill-icon { font-size: 2rem; line-height: 1; }
+
+.skill-name {
+  font-weight: 700;
+  font-size: 0.95rem;
+  color: var(--skill-text);
+}
+
+.skill-level {
+  font-size: 0.75rem;
+  color: var(--skill-level);
+  font-weight: 600;
+  background: rgba(99,102,241,0.1);
+  padding: 0.15rem 0.55rem;
+  border-radius: 999px;
+}
+
+/* ── Project Cards ──────────────────────────────────── */
+.project-card {
+  background: var(--proj-bg);
+  border: 1px solid var(--proj-border);
+  border-radius: 14px;
+  padding: 1.5rem;
+  margin-top: 1.5rem;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.3s ease;
+  border-top: 1px solid var(--proj-border);
+  padding-top: 1.5rem;
+}
+
+.project-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 24px rgba(99,102,241,0.15);
+}
+
+.project-tag {
+  display: inline-block;
+  background: var(--proj-tag-bg);
+  color: var(--proj-tag-text);
+  font-size: 0.75rem;
+  font-weight: 700;
+  padding: 0.2rem 0.65rem;
+  border-radius: 999px;
+  margin-bottom: 0.6rem;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+.project-card h3 {
+  margin: 0 0 0.5rem;
+  font-size: 1.1rem;
+}
+
+.project-card p {
+  margin-bottom: 0.8rem;
+  color: var(--color-muted);
+  font-size: 0.95rem;
+}
+
+.project-link {
+  display: inline-block;
+  text-decoration: none;
+  color: var(--color-accent);
+  font-weight: 600;
+  font-size: 0.9rem;
+  transition: opacity 0.2s ease, transform 0.2s ease;
+}
+
+.project-link:hover {
+  opacity: 0.8;
+  transform: translateX(3px);
+}
+
+/* ── Lists ──────────────────────────────────────────── */
+ul, ol { padding-left: 1.3rem; }
+li { margin-bottom: 0.5rem; }
+
+/* ── Skip Link ──────────────────────────────────────── */
+a[href="#main"] { position: absolute; left: -9999px; }
+a[href="#main"]:focus {
+  left: 1rem; top: 1rem;
+  background: #111827; color: #fff;
+  padding: 0.6rem 1rem; border-radius: 8px; z-index: 1000;
+}
+
+/* ── Footer Contact ─────────────────────────────────── */
+#contact ul { list-style: none; padding: 0; }
+#contact li { display: inline-block; margin: 0 0.5rem; }
+
+/* ── Generic hover ──────────────────────────────────── */
+a:hover { opacity: 0.95; }
+
+/* ── API Demo Section ───────────────────────────────── */
+.load-btn {
+  background: var(--color-accent);
+  color: #fff;
+  border: none;
+  padding: 0.6rem 1.4rem;
+  font-size: 1rem;
+  margin-bottom: 1.5rem;
+  letter-spacing: 0.02em;
+}
+
+.load-btn:hover {
+  background: #4f46e5;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 18px rgba(99,102,241,0.35);
+}
+
+.load-btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+  transform: none;
+}
+
+/* Result card that appears after fetch */
+.api-card {
+  background: var(--skill-bg);
+  border: 1px solid var(--skill-border);
+  border-radius: 14px;
+  padding: 1.5rem 2rem;
+  margin-top: 0.5rem;
+  animation: fadeSlideIn 0.35s ease both;
+}
+
+@keyframes fadeSlideIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+.api-card h3 {
+  margin: 0 0 1rem;
+  font-size: 1.15rem;
+  color: var(--color-accent);
+}
+
+.api-field {
+  display: flex;
+  gap: 0.6rem;
+  align-items: baseline;
+  margin-bottom: 0.6rem;
+  font-size: 0.95rem;
+}
+
+.api-label {
+  font-weight: 700;
+  min-width: 130px;
+  color: var(--color-muted);
+  font-size: 0.78rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  flex-shrink: 0;
+}
+
+.api-value {
+  color: var(--color-text);
+}
+
+/* Loading & error states */
+.api-status {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  font-style: italic;
+  color: var(--color-muted);
+  padding: 0.8rem 0;
+}
+
+.api-status.error {
+  color: #ef4444;
+  font-style: normal;
+  font-weight: 600;
+}
+
+.spinner {
+  width: 18px;
+  height: 18px;
+  border: 3px solid rgba(99,102,241,0.25);
+  border-top-color: var(--color-accent);
+  border-radius: 50%;
+  animation: spin 0.7s linear infinite;
+  flex-shrink: 0;
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+/* inline code styling */
+code {
+  background: var(--skill-bg);
+  border: 1px solid var(--skill-border);
+  padding: 0.1rem 0.4rem;
+  border-radius: 5px;
+  font-size: 0.88em;
+  font-family: "Fira Code", "Cascadia Code", Consolas, monospace;
+  color: var(--color-accent);
+}
