@@ -54,42 +54,42 @@ I am particularly interested in:
 
 ---
 
-### 1. Fraud Detection Model
+## 1. Fraud Detection Model
 
 **Category:** Machine Learning / AI
 
 **Description:**  
-Developed an AI system using Python and Scikit-learn to identify fraudulent transactions with high precision.
+Developed an AI system using Python and Scikit-learn to identify fraudulent transactions with high precision by analyzing complex data patterns.
 
 ### Project Image
 
-![AI Interface](Screenshot%202026-04-19%20033013.png)
+![AI Interface](./ai-interface.png)
 
 ---
 
-### 2. Niryo Collaborative Robot
+## 2. Niryo Collaborative Robot
 
 **Category:** Robotics / Automation
 
 **Description:**  
-Programmed and integrated a Niryo collaborative robot for industrial automation tasks.
+Programmed and integrated a Niryo collaborative robot for industrial automation tasks, focusing on precision pick-and-place and workflow optimization.
 
 ### Project Image
 
-![Robotic Arm](Screenshot%202026-04-19%20033033.png)
+![Robotic Arm](./robot-arm.png)
 
 ---
 
-### 3. Penetration Testing Lab
+## 3. Penetration Testing Lab
 
 **Category:** Security / Kali Linux
 
 **Description:**  
-Conducted vulnerability assessments and network security testing using Kali Linux.
+Conducted vulnerability assessments and network security testing using Kali Linux environments to secure IoT devices.
 
 ### Project Image
 
-![Cybersecurity](Screenshot%202026-04-19%20033046.png)
+![Cybersecurity](./cybersecurity.png)
 
 ---
 
@@ -98,6 +98,22 @@ Conducted vulnerability assessments and network security testing using Kali Linu
 Watch Demo Here:
 
 https://www.youtube.com/watch?v=ordeAlHF5Qg
+
+---
+
+## Technical Expertise
+
+### Web Development
+HTML5, CSS3, JavaScript (ES6+), Semantic Structure
+
+### IoT & Robotics
+Niryo Robotics, Sensor Integration, Arduino, Raspberry Pi
+
+### Data Science
+Python AI Models, Fraud Detection, Data Analysis
+
+### Security
+Kali Linux, Network Monitoring, IoT Security Protocols
 
 ---
 
