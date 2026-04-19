@@ -1,0 +1,123 @@
+
+
+This project demonstrates the basics of asynchronous JavaScript using:
+
+- `setTimeout()`
+- `Promise`
+- `async / await`
+- `fetch()` API
+
+The purpose of this exercise is to understand how JavaScript handles delayed tasks, promises, API requests, and asynchronous operations in a clean and structured way.
+
+---
+
+## Features
+
+### 1. Async Timeout
+
+Uses `setTimeout()` to delay execution for a short time.
+
+### What it does:
+- Prints `Start`
+- Waits for timeout
+- Prints `Timeout finished after 2 seconds`
+- Prints `End`
+
+This helps understand non-blocking behavior in JavaScript.
+
+---
+
+### 2. Async Promise
+
+Uses `Promise` to simulate delayed work.
+
+### What it does:
+- Creates a Promise
+- Waits for 1 second
+- Resolves with a success message
+
+This demonstrates how Promises work before using async/await.
+
+---
+
+### 3. Async Await
+
+Uses `async` and `await` for cleaner Promise handling.
+
+### What it does:
+- Waits for Promise completion
+- Executes code in readable top-to-bottom order
+
+This makes asynchronous code easier to understand.
+
+---
+
+### 4. Async Fetch
+
+Uses `fetch()` to request live data from a public API.
+
+### API Used
+
+GET request to:
+
+https://jsonplaceholder.typicode.com/todos/1
+
+### Displays:
+- Title
+- Completed status
+
+Also includes:
+- `response.ok`
+- `try / catch`
+- `finally`
+
+for proper error handling.
+
+---
+
+## Files
+
+### `index.html`
+
+Contains:
+- 4 buttons for testing async examples
+- status message
+- output display area
+
+### `exercise.js`
+
+Contains:
+- all JavaScript logic
+- Promise handling
+- async/await examples
+- fetch API request
+
+### `exercise.css`
+
+Contains:
+- styling for layout
+- buttons
+- output section
+- clean UI presentation
+
+---
+
+## Learning Goals
+
+This project helps practice:
+
+- asynchronous programming
+- Promise creation
+- async/await syntax
+- fetch API
+- error handling
+- DOM manipulation
+
+---
+
+## Run Locally
+
+Simply open:
+
+```html
+index.html
