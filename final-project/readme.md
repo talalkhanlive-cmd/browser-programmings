@@ -121,32 +121,6 @@ https://YOUR_USERNAME.github.io/weather-dashboard/
 
 ---
 
-## 🤖 AI Tool Usage Summary
-
-**Tools used:** Claude by Anthropic
-
-**What was AI-generated:**
-- Initial HTML structure and file scaffolding
-- CSS variables, sky theme classes, and keyframe animations
-- `api.js` fetch functions and error handling patterns
-- Chart.js configuration and tab-switching logic in `app.js`
-- Geolocation handler and reverse geocoding integration
-- Sky animation controller (`applySkyTheme`, rain/snow DOM injection, lightning scheduler)
-
-**What was manually reviewed and understood:**
-- All API endpoints — tested responses in browser DevTools Network tab
-- WMO weather code table and how codes map to labels, icons, and sky themes
-- How `async/await` works and why it's needed for sequential API calls
-- How `try/catch` intercepts fetch errors and surfaces them in the UI
-- How `classList.add/remove('hidden')` controls what the user sees
-- Chart.js dataset structure and scale configuration
-- CSS `@keyframes`, `backdrop-filter`, and `@media` queries
-- How `navigator.geolocation.getCurrentPosition()` works
-
-**Reflection:** AI was used to accelerate scaffolding and boilerplate. All code has been read, tested, and understood line by line. Every function can be explained, modified, and debugged independently.
-
----
-
 ## 🔮 Possible Future Improvements
 
 - Cache last searched city using `localStorage` so it persists on refresh
