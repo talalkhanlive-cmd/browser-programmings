@@ -4,7 +4,6 @@ A browser-based weather dashboard that lets users search any city and instantly 
 
 ## 🌐 Live Demo
 
-> Replace this with your real URL after deploying:  
 > https://github.com/talalkhanlive-cmd/browser-programmings/blob/main/final-project/readme.md/`
 
 ---
